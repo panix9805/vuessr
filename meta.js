@@ -37,24 +37,24 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '项目起名',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
-      default: '一个 Vue.js 项目',
+      message: '项目描述',
+      default: 'Vue.js 项目',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: 'Author',
+      message: '作者',
     },
     build: {
       when: 'isNotTest',
       type: 'list',
-      message: 'Vue build',
+      message: 'Vue 构建',
       choices: [
         {
           name: 'Runtime + Compiler: recommended for most users',
@@ -72,7 +72,7 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: '安装 vue-router?',
     },
     lint: {
       when: 'isNotTest',
